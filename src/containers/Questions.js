@@ -29,7 +29,7 @@ const Questions = (props) => {
                     </Button>
                 )}
                 {current === questions.length - 1 && (
-                    <Button type="primary" onClick={() => message.success('Processing complete!')}>
+                    <Button type="primary" onClick={() => props.submit()}>
                         Done
                     </Button>
                 )}
